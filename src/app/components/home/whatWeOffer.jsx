@@ -91,13 +91,13 @@ const WhatWeOffer = () => {
     <section className="bg-[#fcfcfc] border-t border-[#F0F0F0]">
       <div className="max-w-[1280px] px-8 py-24 mx-auto flex gap-8 h-auto">
         <div className="flex-1">
-          <p className="text-base font-semibold text-[#ED645E] mb-4">
+          <p className="text-base font-semibold text-[#ED645E] mb-4 font-geist">
             WHAT WE OFFER
           </p>
-          <h3 className="text-4xl tracking-[-2%] text-[#262626] font-bold mb-4">
+          <h3 className="text-4xl tracking-[-2%] text-[#262626] font-bold mb-4 font-onest">
             Our Core Offerings
           </h3>
-          <p className="text-[#454545] text-lg font-normal mb-8">
+          <p className="text-[#454545] text-lg font-normal mb-8 font-geist">
             Innovative solutions for fast charging, battery swaps, smart tech,
             and sustainable energy.
           </p>
@@ -119,7 +119,7 @@ const WhatWeOffer = () => {
                       className="flex justify-between"
                       onClick={() => handleToggle(i)}
                     >
-                      <p className="text-[#141414] text-lg font-semibold">
+                      <p className="text-[#141414] text-lg font-semibold font-geist">
                         {item?.offer}
                       </p>
                       <button className="text-2xl">
@@ -131,7 +131,7 @@ const WhatWeOffer = () => {
                         {item?.benefits.map((el, i) => {
                           return (
                             <p
-                              className="text-[#262626] text-base text-wrap mb-1"
+                              className="text-[#262626] text-base text-wrap mb-1 font-geist"
                               key={i}
                             >
                               <span className="font-semibold">

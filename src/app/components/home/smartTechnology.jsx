@@ -19,10 +19,10 @@ const SmartTechnology = () => {
     <section className="bg-[#FCFCFC] border-b border-[#f0f0f0]">
       <div className="max-w-[1280px] px-8 py-24 mx-auto">
         <div className="w-[55%] mx-auto text-center mb-20">
-          <h3 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-4">
+          <h3 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-4 font-onest">
             Driving the Future of E-Vehicles with Smart Technology
           </h3>
-          <p className="text-lg text-[#454545]">
+          <p className="text-lg text-[#454545] font-geist">
             At Geil, we’re shaping the future of electric vehicles with smarter,
             real-time technology that enhances performance and efficiency.
           </p>
@@ -37,10 +37,10 @@ const SmartTechnology = () => {
                   style={{ boxShadow: "0px 2px 6px 0px #1018280F" }}
                   key={i}
                 >
-                  <p className="text-[#262626] text-lg font-bold ">
+                  <p className="text-[#262626] text-lg font-bold font-geist">
                     {items?.heading}
                   </p>
-                  <p className="text-base text-[#595959] font-normal mt-2 mb-8">
+                  <p className="text-base text-[#595959] font-normal mt-2 mb-8 font-geist">
                     {items?.subhead}
                   </p>
                   <img
@@ -58,7 +58,7 @@ const SmartTechnology = () => {
             className="bg-[#F5F5F5] grid grid-cols-2 gap-8 p-8 rounded-2xl"
             style={{ boxShadow: "0px 2px 6px 0px #1018280F" }}
           >
-            <div>
+            <div className="font-geist">
               <p className="text-[#262626] text-lg font-bold ">
                 BMS (Battery Management System)
               </p>

@@ -29,10 +29,10 @@ const WhoWeServe = () => {
     <section className="bg-white border-b border-[#F0F0F0]">
       <div className="max-w-[1280px] px-8 py-24 mx-auto">
         <div className="w-[55%] text-left mb-20">
-          <h3 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-4">
+          <h3 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-4 font-onest">
             Who We Serve
           </h3>
-          <p className="text-lg text-[#454545]">
+          <p className="text-lg text-[#454545] font-geist">
             We serve eco-conscious individuals, urban delivery businesses, and
             transport operators. Our solutions are tailored to meet their unique
             needs for efficient and sustainable mobility.
@@ -60,10 +60,10 @@ const WhoWeServe = () => {
                   }}
                 ></div>
                 <div className="absolute z-20 pl-6 pt-[18rem]">
-                  <p className="font-bold text-xl text-white">
+                  <p className="font-bold text-xl text-white font-onest">
                     {item?.heading}
                   </p>
-                  <p className="font-medium text-lg text-[#f5f5f5]">
+                  <p className="font-medium text-lg text-[#f5f5f5] font-geist">
                     {item?.subhead}
                   </p>
                 </div>

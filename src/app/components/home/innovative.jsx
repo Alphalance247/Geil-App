@@ -30,10 +30,10 @@ const Innovative = () => {
     <section className="bg-[#f5f5f5] border-t border-[#F0F0F0]">
       <div className="max-w-[1280px] px-6 py-24 mx-auto">
         <div className="w-[55%] mx-auto text-center mb-20">
-          <h3 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-4">
+          <h3 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-4 font-onest">
             Innovative Solutions for Smarter Electric Mobility
           </h3>
-          <p className="text-lg text-[#454545]">
+          <p className="text-lg text-[#454545] font-geist">
             Geil powers the future of electric mobility with smart charging,
             battery swapping, and innovative solutions for electric trikes and
             light vehicles.
@@ -47,8 +47,10 @@ const Innovative = () => {
                 className="bg-[url('/assets/image/refill.png')] w-[389px] h-[418px] flex flex-col justify-between px-8 py-10 rounded-br-2xl rounded-tr-2xl bg-cover"
                 key={i}
               >
-                <p className="text-white font-bold text-xl">{item?.heading}</p>
-                <p className="font-normal text-lg text-[#f5f5f5]">
+                <p className="text-white font-bold text-xl font-onest">
+                  {item?.heading}
+                </p>
+                <p className="font-normal text-lg text-[#f5f5f5] font-geist">
                   {item?.subhead}
                 </p>
               </div>

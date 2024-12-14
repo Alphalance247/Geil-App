@@ -11,7 +11,7 @@ const Highlight = () => {
           return (
             <p
               key={i}
-              className="text-sm font-bold tracking-[0.5px] text-[#fcfcfc] uppercase"
+              className="text-sm font-bold tracking-[0.5px] text-[#fcfcfc] uppercase font-geist"
             >
               {item}
             </p>

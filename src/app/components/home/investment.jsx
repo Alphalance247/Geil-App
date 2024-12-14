@@ -29,21 +29,21 @@ const Investment = () => {
       <div className="max-w-[1280px] px-8 py-24 mx-auto">
         <div className="flex justify-between mb-20">
           <div className="w-[80%]">
-            <p className="text-base font-semibold text-[#ED645E] mb-2">
+            <p className="text-base font-semibold text-[#ED645E] mb-2 font-geist">
               BENEFITS FOR PLATFORM PARTNERS
             </p>
-            <h3 className="text-4xl tracking-[-2%] text-[#262626] font-bold">
+            <h3 className="text-4xl tracking-[-2%] text-[#262626] font-bold font-onest">
               Unlock Exclusive Investment Advantages
             </h3>
           </div>
 
           <div className="w-[70%]">
-            <p className="text-[#454545] text-lg font-normal mb-6">
+            <p className="text-[#454545] text-lg font-normal mb-6 font-geist">
               Discover the benefits of partnering with us, designed to enhance
               your business, drive growth, and keep you ahead in the EV
               revolution. Here’s what you gain:
             </p>
-            <button className="px-6 py-[10px] text-[#1F1F1F] font-bold text-sm bg-[#6BD051] rounded-[30px]">
+            <button className="px-6 py-[10px] text-[#1F1F1F] font-bold text-sm bg-[#6BD051] rounded-[30px] font-geist">
               Register Your Interest
             </button>
           </div>
@@ -57,10 +57,10 @@ const Investment = () => {
                 className="border border-[#f0f0f0] bg-white rounded-2xl p-6"
               >
                 <Image src={item?.image} width={40} height={40} alt="icons" />
-                <p className="text-[#262626] text-lg font-bold mt-4 mb-2">
+                <p className="text-[#262626] text-lg font-bold mt-4 mb-2 font-geist">
                   {item?.heading}
                 </p>
-                <p className="text-base text-[#454545] font-normal">
+                <p className="text-base text-[#454545] font-normal font-geist">
                   {item?.subhead}
                 </p>
               </div>

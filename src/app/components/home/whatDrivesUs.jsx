@@ -25,7 +25,7 @@ const WhatDrivesUs = () => {
   return (
     <section className="bg-[#141414] border-t border-[#F0F0F0] rounded-tl-[56px] rounded-tr-[56px]">
       <div className="max-w-[1280px] px-8 py-24 mx-auto">
-        <h3 className="text-center text-4xl font-bold text-white mb-20">
+        <h3 className="text-center text-4xl font-bold text-white mb-20 font-onest">
           What Drives Us?
         </h3>
 
@@ -33,10 +33,10 @@ const WhatDrivesUs = () => {
           {data.map((item, i) => {
             return (
               <div key={i} className="rounded-2xl bg-[#262626]">
-                <p className="text-lg font-bold text-white py-4 px-6 rounded-tl-[16px] rounded-tr-[16px]">
+                <p className="text-lg font-bold text-white py-4 px-6 rounded-tl-[16px] rounded-tr-[16px] font-geist">
                   {item?.heading}
                 </p>
-                <p className="text-lg text-white px-6 pt-6  bg-[#454545] h-[200px] rounded-2xl">
+                <p className="text-lg text-white px-6 pt-6  bg-[#454545] h-[200px] rounded-2xl font-geist">
                   {item?.subhead}
                 </p>
               </div>
