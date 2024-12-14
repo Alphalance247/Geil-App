@@ -23,11 +23,11 @@ const WhatWeOffer = () => {
             "tailored to the battery specifications of electric tricycles & motorcycles.",
         },
         {
-          heading: "Space-saving",
+          heading: "Space-saving ",
           subhead: "designs perfect for dense urban areas.",
         },
         {
-          heading: "Compact stations",
+          heading: "Compact stations ",
           subhead: "adaptable for high or low traffic locations.",
         },
       ],
@@ -41,11 +41,11 @@ const WhatWeOffer = () => {
             "tailored to the battery specifications of electric tricycles & motorcycles.",
         },
         {
-          heading: "Space-saving",
+          heading: "Space-saving ",
           subhead: "designs perfect for dense urban areas.",
         },
         {
-          heading: "Compact stations",
+          heading: "Compact stations ",
           subhead: "adaptable for high or low traffic locations.",
         },
       ],
@@ -59,11 +59,11 @@ const WhatWeOffer = () => {
             "tailored to the battery specifications of electric tricycles & motorcycles.",
         },
         {
-          heading: "Space-saving",
+          heading: "Space-saving ",
           subhead: "designs perfect for dense urban areas.",
         },
         {
-          heading: "Compact stations",
+          heading: "Compact stations ",
           subhead: "adaptable for high or low traffic locations.",
         },
       ],
@@ -77,41 +77,43 @@ const WhatWeOffer = () => {
             "tailored to the battery specifications of electric tricycles & motorcycles.",
         },
         {
-          heading: "Space-saving",
+          heading: "Space-saving ",
           subhead: "designs perfect for dense urban areas.",
         },
         {
-          heading: "Compact stations",
+          heading: "Compact stations ",
           subhead: "adaptable for high or low traffic locations.",
         },
       ],
     },
   ];
   return (
-    <section className="bg-[#fcfcfc]">
-      <div className="max-w-[1280px] px-8 py-24 mx-auto grid grid-cols-2 gap-8">
-        <div>
+    <section className="bg-[#fcfcfc] border-t border-[#F0F0F0]">
+      <div className="max-w-[1280px] px-8 py-24 mx-auto flex gap-8 h-auto">
+        <div className="flex-1">
           <p className="text-base font-semibold text-[#ED645E] mb-4">
             WHAT WE OFFER
           </p>
           <h3 className="text-4xl tracking-[-2%] text-[#262626] font-bold mb-4">
             Our Core Offerings
           </h3>
-          <p className="text-[#454545] text-lg font-normal mb-10">
+          <p className="text-[#454545] text-lg font-normal mb-8">
             Innovative solutions for fast charging, battery swaps, smart tech,
             and sustainable energy.
           </p>
 
-          <div className="flex flex-col gap-y-4">
+          <div className="flex flex-col gap-y-3">
             {Offerings.map((item, i) => {
               return (
                 <div
                   key={i}
-                  className={`bg-[#f5f5f5] cursor-pointer  rounded-lg hover:transition-all hover:duration-700 hover:scale-x-50 ${
+                  className={`bg-[#f5f5f5] cursor-pointer  rounded-lg hover:transition-all hover:duration-700 hover:scale-[1.01] hover:bg-white ${
                     isOpen === i ? "border-none" : "border-[#d9d9d9] border"
                   }`}
                 >
-                  <hr className="w-[284px] h-[6px] bg-[#6BD051] rounded-tl-lg" />
+                  {isOpen === i && (
+                    <hr className="w-[284px] h-[6px] bg-[#6BD051] rounded-tl-lg" />
+                  )}
                   <div className="px-6 py-5">
                     <div
                       className="flex justify-between"
@@ -128,7 +130,10 @@ const WhatWeOffer = () => {
                       <div className="mt-6">
                         {item?.benefits.map((el, i) => {
                           return (
-                            <p className="text-[#262626] text-base" key={i}>
+                            <p
+                              className="text-[#262626] text-base text-wrap mb-1"
+                              key={i}
+                            >
                               <span className="font-semibold">
                                 {el?.heading}
                               </span>
@@ -144,12 +149,13 @@ const WhatWeOffer = () => {
             })}
           </div>
         </div>
-        <div>
+        <div className="flex-1 h-auto object-center object-cover">
           <Image
             src="/assets/image/refuel.png"
+            className="w-full h-full"
+            alt="refuelingImage"
             width={687}
             height={669}
-            alt="refuelingImage"
           />
         </div>
       </div>
