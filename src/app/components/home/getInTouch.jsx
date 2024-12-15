@@ -4,7 +4,7 @@ import ContactForm from "./contactForm";
 const GetInTouch = () => {
   return (
     <section className="bg-white border-b border-[#F0F0F0]">
-      <div className="max-w-[1280px] px-8 py-24 mx-auto grid grid-cols-2 gap-x-24">
+      <div className="max-w-[1280px] px-8 py-24 mx-auto grid grid-cols-2 gap-x-24 max-xl:gap-x-12 max-lg:grid-cols-1 max-lg:gap-y-6">
         <div className="flex flex-col gap-y-10">
           <div className="text-left w-[90%]">
             <h3 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-4 font-onest">
@@ -42,7 +42,7 @@ const GetInTouch = () => {
             </p>
           </div>
 
-          <div className="w-[558px] h-[390px]">
+          <div className="w-full h-[390px]">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31748.01903324861!2d3.4011!3d6.44709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b1ba598381b%3A0x7f8e53e469c011f3!2sTafawa%20Balewa%20Square!5e0!3m2!1sen!2sng!4v1234567890"
               className="w-full h-full inset-0 rounded-2xl"

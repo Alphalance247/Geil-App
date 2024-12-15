@@ -23,7 +23,7 @@ const Header = ({ handleNavClick }) => {
                 key={items?.id}
                 className="inline-flex cursor-pointer uppercase max-lg:flex max-lg:flex-col max-lg:pt-12 max-lg:items-center max-sm:pt-4"
               >
-                <li className="text-[white] cursor-pointer px-4 text-sm font-semibold font-geist">
+                <li className="text-[white] cursor-pointer px-4 text-sm font-semibold font-geist max-xl:text-xs max-xl:px-2">
                   {items?.name}
                 </li>
               </ul>

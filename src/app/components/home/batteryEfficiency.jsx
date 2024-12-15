@@ -27,8 +27,8 @@ const BatteryEfficiency = () => {
   ];
   return (
     <section className="bg-white border-b border-t border-[#F0F0F0]">
-      <div className="max-w-[1280px] px-8 py-24 mx-auto">
-        <div className="w-[55%] text-left mb-16">
+      <div className="max-w-[1280px] px-8 py-24 mx-auto max-lg:py-16">
+        <div className="w-[55%] text-left mb-16 max-xl:w-[75%] max-lg:w-[85%]">
           <h3 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-4 font-onest">
             Smart Geil Lithium-Ion Batteries Designed for Efficient and Reliable
             Electric Mobility
@@ -49,7 +49,7 @@ const BatteryEfficiency = () => {
                 } border-[#d9d9d9] flex justify-between py-8`}
                 key={i}
               >
-                <div className="flex items-start gap-x-11 w-[47%]">
+                <div className="flex items-start gap-x-11 w-[47%] max-lg:gap-x-4">
                   <p className="font-geist font-medium text-sm text-[#595959]">
                     {item?.figure}
                   </p>
@@ -57,7 +57,7 @@ const BatteryEfficiency = () => {
                     {item?.valueprop}
                   </p>
                 </div>
-                <p className="text-base font-normal text-[#8C8C8C] font-geist w-[53%]">
+                <p className="text-base font-normal text-[#8C8C8C] font-geist w-[53%] max-lg:w-[65%]">
                   {item?.properties}
                 </p>
               </div>

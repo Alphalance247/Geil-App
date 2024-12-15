@@ -15,13 +15,13 @@ const Empowering = () => {
   ];
   return (
     <section className="bg-white">
-      <div className="max-w-[1280px] px-8 py-24 mx-auto">
-        <div className="grid grid-cols-[49%auto] gap-[63px] mb-12">
+      <div className="max-w-[1280px] px-8 py-24 mx-auto max-lg:py-16 max-md:px-4 max-sm:py-12">
+        <div className="grid grid-cols-[49%auto] gap-[63px] mb-12 max-lg:gap-8 max-sm:grid-cols-1">
           <div>
-            <h1 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-6 font-onest">
+            <h1 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-6 font-onest max-lg:text-2xl">
               Empowering Sustainable Urban Mobility
             </h1>
-            <p className="text-xl font-normal text-[#454545] font-onest">
+            <p className="text-xl font-normal text-[#454545] font-onest max-lg:text-sm">
               At Green Energy Infrastructure Limited (GEIL), we are shaping the
               future of urban mobility with innovative charging solutions for
               electric trikes and light electric vehicles. As cities transition
@@ -44,14 +44,17 @@ const Empowering = () => {
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 gap-6 max-sm:grid-cols-1">
           {data.map((item, i) => {
             return (
-              <div className="p-8 rounded-2xl border border-[#D9D9D9]" key={i}>
-                <p className="text-[#262626] text-2xl font-bold mb-2 font-onest">
+              <div
+                className="p-8 rounded-2xl border border-[#D9D9D9] max-lg:p-4"
+                key={i}
+              >
+                <p className="text-[#262626] text-2xl font-bold mb-2 font-onest max-lg:text-base">
                   {item?.heading}
                 </p>
-                <p className="font-normal text-base text-[#454545] font-geist">
+                <p className="font-normal text-base text-[#454545] font-geist max-lg:text-sm">
                   {item?.subhead}
                 </p>
               </div>

@@ -17,8 +17,8 @@ const SmartTechnology = () => {
   ];
   return (
     <section className="bg-[#FCFCFC] border-t border-[#f0f0f0]">
-      <div className="max-w-[1280px] px-8 py-24 mx-auto">
-        <div className="w-[55%] mx-auto text-center mb-20">
+      <div className="max-w-[1280px] px-8 py-24 mx-auto max-lg:py-16">
+        <div className="w-[55%] mx-auto text-center mb-20 max-xl:w-[80%]">
           <h3 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-4 font-onest">
             Driving the Future of E-Vehicles with Smart Technology
           </h3>
@@ -33,7 +33,7 @@ const SmartTechnology = () => {
             {data.map((items, i) => {
               return (
                 <div
-                  className="p-8 border border-[#f0f0f0] rounded-2xl bg-[#f5f5f5]"
+                  className="p-8 border border-[#f0f0f0] rounded-2xl bg-[#f5f5f5] max-lg:p-4"
                   style={{ boxShadow: "0px 2px 6px 0px #1018280F" }}
                   key={i}
                 >
@@ -55,7 +55,7 @@ const SmartTechnology = () => {
           </div>
 
           <div
-            className="bg-[#F5F5F5] grid grid-cols-2 gap-8 p-8 rounded-2xl"
+            className="bg-[#F5F5F5] grid grid-cols-2 gap-8 p-8 rounded-2xl max-lg:p-4"
             style={{ boxShadow: "0px 2px 6px 0px #1018280F" }}
           >
             <div className="font-geist">

@@ -89,7 +89,7 @@ const WhatWeOffer = () => {
   ];
   return (
     <section className="bg-[#fcfcfc] border-t border-[#F0F0F0]">
-      <div className="max-w-[1280px] px-8 py-24 mx-auto flex gap-8 h-auto">
+      <div className="max-w-[1280px] px-8 py-24 mx-auto flex gap-8 h-auto max-lg:py-16 max-lg:flex-col max-md:px-4 max-md:py-12">
         <div className="flex-1">
           <p className="text-base font-semibold text-[#ED645E] mb-4 font-geist">
             WHAT WE OFFER

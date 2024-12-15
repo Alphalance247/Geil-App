@@ -33,7 +33,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#141414]">
       <div className="transition-all duration-500 max-w-[1350px] mx-auto px-8 py-[5rem]">
-        <div className="flex justify-between items-center mb-20">
+        <div className="flex justify-between items-center mb-20 max-lg:grid max-lg:grid-cols-2">
           <Image
             src="/assets/icon/logo.svg"
             width={111}
@@ -41,14 +41,14 @@ const Footer = () => {
             alt="logo"
           />
 
-          <nav className="transition-all duration-500 max-lg:hidden">
+          <nav className="">
             {navs.map((items, i) => {
               return (
                 <ul
                   key={items?.id}
-                  className="inline-flex cursor-pointer uppercase max-lg:flex max-lg:flex-col max-lg:pt-12 max-lg:items-center max-sm:pt-4"
+                  className="inline-flex cursor-pointer uppercase"
                 >
-                  <li className="text-[white] cursor-pointer px-4 text-sm font-semibold font-geist">
+                  <li className="text-[white] cursor-pointer px-4 text-sm font-semibold font-geist max-xl:text-xs max-xl:px-2">
                     {items?.name}
                   </li>
                 </ul>
