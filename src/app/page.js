@@ -6,9 +6,11 @@ import Innovative from "./components/home/innovative";
 import Investment from "./components/home/investment";
 import SmartTechnology from "./components/home/smartTechnology";
 import WhatDrivesUs from "./components/home/whatDrivesUs";
-// import Empower from "./components/home/empower";
 import WhatWeOffer from "./components/home/whatWeOffer";
 import WhoWeServe from "./components/home/whoWeServe";
+import BatteryEfficiency from "./components/home/batteryEfficiency";
+import GetInTouch from "./components/home/getInTouch";
+import Footer from "./components/home/footer";
 
 export default function Home() {
   return (
@@ -17,13 +19,15 @@ export default function Home() {
       <Hero />
       <Highlight />
       <Empowering />
-      {/* <Empower /> */}
       <WhatWeOffer />
       <Innovative />
       <WhatDrivesUs />
       <WhoWeServe />
       <Investment />
       <SmartTechnology />
+      <BatteryEfficiency />
+      <GetInTouch />
+      <Footer />
     </>
   );
 }

@@ -16,7 +16,7 @@ const SmartTechnology = () => {
     },
   ];
   return (
-    <section className="bg-[#FCFCFC] border-b border-[#f0f0f0]">
+    <section className="bg-[#FCFCFC] border-t border-[#f0f0f0]">
       <div className="max-w-[1280px] px-8 py-24 mx-auto">
         <div className="w-[55%] mx-auto text-center mb-20">
           <h3 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-4 font-onest">

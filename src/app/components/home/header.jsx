@@ -13,7 +13,7 @@ const Header = ({ handleNavClick }) => {
 
   return (
     <header className="bg-[#141414]">
-      <div className="transition-all duration-500 max-w-[1430px] mx-auto px-8 flex justify-between items-center py-[18px]">
+      <div className="transition-all duration-500 max-w-[1300px] mx-auto px-8 flex justify-between items-center py-[18px]">
         <Image src="/assets/icon/logo.svg" width={111} height={34} alt="logo" />
 
         <nav className="transition-all duration-500 max-lg:hidden">
