@@ -41,9 +41,9 @@ const Header = ({ handleNavClick }) => {
           <Button />
         </div>
 
-        <div className="max-lg:hidden">
+        {/* <div className="max-lg:hidden">
           <Button onClick={() => handleNavClick(null, "contact")} />
-        </div>
+        </div> */}
 
         <div className="lg:hidden transition-all duration-500 grow flex justify-end items-center h-10 gap-8">
           <button
