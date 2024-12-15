@@ -4,13 +4,13 @@ import ContactForm from "./contactForm";
 const GetInTouch = () => {
   return (
     <section className="bg-white border-b border-[#F0F0F0]">
-      <div className="max-w-[1280px] px-8 py-24 mx-auto grid grid-cols-2 gap-x-24 max-xl:gap-x-12 max-lg:grid-cols-1 max-lg:gap-y-6">
+      <div className="max-w-[1280px] px-8 py-24 mx-auto grid grid-cols-2 gap-x-24 max-xl:gap-x-12 max-lg:grid-cols-1 max-lg:gap-y-6 max-lg:py-16 max-md:py-12 max-md:px-4">
         <div className="flex flex-col gap-y-10">
-          <div className="text-left w-[90%]">
-            <h3 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-4 font-onest">
+          <div className="text-left w-[90%] max-md:w-full">
+            <h3 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-4 font-onest max-md:text-2xl">
               Get in Touch with Us
             </h3>
-            <p className="text-lg text-[#454545] font-geist">
+            <p className="text-lg text-[#454545] font-geist max-md:text-base">
               We’d love to hear from you! Whether you have a question, feedback,
               or want to learn more about our services, feel free to reach out.
             </p>

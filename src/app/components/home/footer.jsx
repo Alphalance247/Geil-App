@@ -32,8 +32,8 @@ const Footer = () => {
   const socialData = navs.slice(0, 3);
   return (
     <footer className="bg-[#141414]">
-      <div className="transition-all duration-500 max-w-[1350px] mx-auto px-8 py-[5rem]">
-        <div className="flex justify-between items-center mb-20 max-lg:grid max-lg:grid-cols-2">
+      <div className="transition-all duration-500 max-w-[1350px] mx-auto px-8 py-[5rem] max-lg:py-16 max-md:py-12 max-md:px-4">
+        <div className="flex justify-between items-center mb-20 max-md:flex-col max-md:justify-center max-md:gap-y-6 max-md:mb-10">
           <Image
             src="/assets/icon/logo.svg"
             width={111}
@@ -46,9 +46,9 @@ const Footer = () => {
               return (
                 <ul
                   key={items?.id}
-                  className="inline-flex cursor-pointer uppercase"
+                  className="inline-flex cursor-pointer uppercase  max-lg:flex max-md:flex-col max-md:justify-center max-md:text-center"
                 >
-                  <li className="text-[white] cursor-pointer px-4 text-sm font-semibold font-geist max-xl:text-xs max-xl:px-2">
+                  <li className="text-[white] cursor-pointer px-4 text-sm font-semibold font-geist max-xl:text-xs max-xl:px-2 max-lg:text-center max-lg:mb-4">
                     {items?.name}
                   </li>
                 </ul>
@@ -77,14 +77,14 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-[#373737] pt-10 flex justify-between">
+        <div className="border-t border-[#373737] pt-10 flex justify-between max-md:justify-center max-md:text-center max-md:flex-col max-md:gap-y-4">
           <p className="text-sm font-medium font-geist text-[#BFBFBF]">
             © {new Date().getFullYear()} Green Energy Infrastructure Limited.
             All rights reserved.
           </p>
 
-          <div className="flex gap-x-2">
-            <div className="px-3 flex items-center gap-x-3">
+          <div className="flex gap-x-2 max-md:justify-center max-md:text-center max-md:flex-col max-md:gap-y-4">
+            <div className="px-3 flex items-center gap-x-3 max-md:flex-col">
               <a
                 href="#"
                 aria-label="Terms-Condition"
@@ -95,7 +95,7 @@ const Footer = () => {
               <span className="w-[2px] h-[2px] bg-[#BFBFBF] rounded-full inline-block"></span>
             </div>
 
-            <div className="px-3 flex items-center gap-x-1">
+            <div className="px-3 ">
               <a
                 href="#"
                 aria-label="privacy-policy"

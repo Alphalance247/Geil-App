@@ -27,13 +27,13 @@ const BatteryEfficiency = () => {
   ];
   return (
     <section className="bg-white border-b border-t border-[#F0F0F0]">
-      <div className="max-w-[1280px] px-8 py-24 mx-auto max-lg:py-16">
-        <div className="w-[55%] text-left mb-16 max-xl:w-[75%] max-lg:w-[85%]">
-          <h3 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-4 font-onest">
+      <div className="max-w-[1280px] px-8 py-24 mx-auto max-lg:py-16 max-md:py-12 max-md:px-4">
+        <div className="w-[55%] text-left mb-16 max-xl:w-[75%] max-lg:w-[85%] max-md:w-full max-md:mb-10">
+          <h3 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-4 font-onest max-md:text-2xl">
             Smart Geil Lithium-Ion Batteries Designed for Efficient and Reliable
             Electric Mobility
           </h3>
-          <p className="text-lg text-[#454545] font-geist">
+          <p className="text-lg text-[#454545] font-geist max-md:text-base">
             Why settle for standard Li-ion or lead-acid batteries when you can
             have a smarter, more powerful, and efficient solution with Geil
             batteries?
@@ -46,10 +46,10 @@ const BatteryEfficiency = () => {
               <div
                 className={`${
                   i === 3 ? "border-none" : " border-b"
-                } border-[#d9d9d9] flex justify-between py-8`}
+                } border-[#d9d9d9] flex justify-between py-8 max-md:flex-col max-md:gap-y-6`}
                 key={i}
               >
-                <div className="flex items-start gap-x-11 w-[47%] max-lg:gap-x-4">
+                <div className="flex items-start gap-x-11 w-[47%] max-lg:gap-x-4 max-md:w-full max-md:items-center">
                   <p className="font-geist font-medium text-sm text-[#595959]">
                     {item?.figure}
                   </p>
@@ -57,7 +57,7 @@ const BatteryEfficiency = () => {
                     {item?.valueprop}
                   </p>
                 </div>
-                <p className="text-base font-normal text-[#8C8C8C] font-geist w-[53%] max-lg:w-[65%]">
+                <p className="text-base font-normal text-[#8C8C8C] font-geist w-[53%] max-lg:w-[65%] max-md:w-full max-md:text-sm">
                   {item?.properties}
                 </p>
               </div>

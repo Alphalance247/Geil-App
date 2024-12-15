@@ -1,7 +1,13 @@
+"use client";
 import Button from "../Button";
 import Image from "next/image";
+import { useState } from "react";
+import { FiMenu } from "react-icons/fi";
+import { IoClose } from "react-icons/io5";
 
 const Header = ({ handleNavClick }) => {
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+
   const navs = [
     { id: 1, name: "About us", scrollSection: "services" },
     { id: 2, name: "CORE OFFERINGS", scrollSection: "about" },
@@ -31,8 +37,21 @@ const Header = ({ handleNavClick }) => {
           })}
         </nav>
 
-        <div>
+        <div className="max-lg:hidden">
           <Button />
+        </div>
+
+        <div className="max-lg:hidden">
+          <Button onClick={() => handleNavClick(null, "contact")} />
+        </div>
+
+        <div className="lg:hidden transition-all duration-500 grow flex justify-end items-center h-10 gap-8">
+          <button
+            className="transition-all duration-500 text-white p-1 text-4xl hover:p-2"
+            onClick={() => setShowMobileMenu((prev) => !prev)}
+          >
+            {showMobileMenu ? <IoClose /> : <FiMenu />}
+          </button>
         </div>
       </div>
     </header>

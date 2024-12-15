@@ -20,7 +20,7 @@ const ContactForm = () => {
     <div>
       <form
         action=""
-        className="p-6 border border-[#F0F0F0] rounded-2xl h-full"
+        className="p-6 border border-[#F0F0F0] rounded-2xl h-full max-md:p-3"
         style={{ boxShadow: " 0px 6px 15px -2px #10182814" }}
         onSubmit={handleForm}
       >
@@ -28,7 +28,7 @@ const ContactForm = () => {
           Submit the form, and we'll reply soon!
         </p>
 
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1">
           <div>
             <label
               htmlFor="firstname"

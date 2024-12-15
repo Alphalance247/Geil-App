@@ -17,19 +17,19 @@ const SmartTechnology = () => {
   ];
   return (
     <section className="bg-[#FCFCFC] border-t border-[#f0f0f0]">
-      <div className="max-w-[1280px] px-8 py-24 mx-auto max-lg:py-16">
-        <div className="w-[55%] mx-auto text-center mb-20 max-xl:w-[80%]">
-          <h3 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-4 font-onest">
+      <div className="max-w-[1280px] px-8 py-24 mx-auto max-lg:py-16 max-md:py-12 max-md:px-4">
+        <div className="w-[55%] mx-auto text-center mb-20 max-xl:w-[80%] max-md:w-full">
+          <h3 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-4 font-onest max-md:text-2xl">
             Driving the Future of E-Vehicles with Smart Technology
           </h3>
-          <p className="text-lg text-[#454545] font-geist">
+          <p className="text-lg text-[#454545] font-geist max-md:text-base">
             At Geil, we’re shaping the future of electric vehicles with smarter,
             real-time technology that enhances performance and efficiency.
           </p>
         </div>
 
         <div>
-          <div className="grid grid-cols-2 gap-4 mb-4">
+          <div className="grid grid-cols-2 gap-4 mb-4 max-md:grid-cols-1">
             {data.map((items, i) => {
               return (
                 <div
@@ -55,7 +55,7 @@ const SmartTechnology = () => {
           </div>
 
           <div
-            className="bg-[#F5F5F5] grid grid-cols-2 gap-8 p-8 rounded-2xl max-lg:p-4"
+            className="bg-[#F5F5F5] grid grid-cols-2 gap-8 p-8 rounded-2xl max-lg:p-4 max-md:grid-cols-1"
             style={{ boxShadow: "0px 2px 6px 0px #1018280F" }}
           >
             <div className="font-geist">
