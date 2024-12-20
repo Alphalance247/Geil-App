@@ -1,4 +1,9 @@
+"use client";
+
+import { useState } from "react";
+
 const Innovative = () => {
+  const [showBack, setShowBack] = useState(null);
   const refill = [
     {
       heading: "Time to Refill",
@@ -35,7 +40,7 @@ const Innovative = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 justify-center gap-4  w-[80%]  mx-auto max-lg:w-full max-lg:grid-cols-2 max-md:grid-cols-1 ">
+        {/* <div className="grid grid-cols-2 justify-center gap-4  w-[80%]  mx-auto max-lg:w-full max-lg:grid-cols-2 max-md:grid-cols-1 ">
           {refill.map((item, i) => {
             return (
               <div
@@ -51,6 +56,49 @@ const Innovative = () => {
               </div>
             );
           })}
+        </div> */}
+
+        <div className="grid grid-cols-2 gap-4 w-[80%] mx-auto max-lg:w-full max-lg:grid-cols-2 max-md:grid-cols-1">
+          {refill.map((item, i) => (
+            <div
+              key={i}
+              className="relative w-full h-[300px]"
+              style={{ perspective: "1000px" }} // Inline style for 3D space
+            >
+              {/* Card Inner */}
+              <div
+                className="absolute w-full h-full transition-transform duration-700"
+                style={{
+                  transformStyle: "preserve-3d", // Inline style for 3D rendering
+                  transform:
+                    showBack === i ? "rotateY(180deg)" : "rotateY(0deg)", // Inline conditional transform
+                }}
+                onMouseEnter={() => setShowBack(i)}
+                onMouseLeave={() => setShowBack(null)}
+              >
+                {/* Front Face */}
+                <div
+                  className="absolute w-full h-full bg-[#fcfcfc] border border-[#f0f0f0] rounded-2xl flex justify-center items-center"
+                  style={{ backfaceVisibility: "hidden" }} // Inline style to hide backface
+                >
+                  <p className="font-bold text-xl text-[#141414]">
+                    {item.heading}
+                  </p>
+                </div>
+
+                {/* Back Face */}
+                <div
+                  className="absolute w-full h-full bg-green-600 text-white rounded-2xl flex justify-center items-center p-6"
+                  style={{
+                    backfaceVisibility: "hidden", // Inline style to hide backface
+                    transform: "rotateY(180deg)", // Inline style to flip back face
+                  }}
+                >
+                  <p className="text-lg">{item.subhead}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
