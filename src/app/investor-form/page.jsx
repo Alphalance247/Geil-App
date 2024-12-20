@@ -125,7 +125,7 @@ const InvestorForm = () => {
                   required
                   value={form?.coumtry || ""}
                   id="country"
-                  className="rounded-lg border border-[#D1D5DB] outline-none text-[#8c8c8c] w-full px-[14px] py-[10px]"
+                  className="rounded-lg border border-[#D1D5DB] outline-none text-[#8c8c8c] w-full px-[14px] py-[14px]"
                   onChange={handleChange}
                 >
                   <option value=""></option>
@@ -146,7 +146,7 @@ const InvestorForm = () => {
                   name="city"
                   value={form?.city || ""}
                   id="city"
-                  className="rounded-lg border outline-none text-[#8c8c8c] border-[#D1D5DB] w-full px-[14px] py-[10px]"
+                  className="rounded-lg border outline-none text-[#8c8c8c] border-[#D1D5DB] w-full px-[14px] py-[14px]"
                   onChange={handleChange}
                 >
                   <option value=""></option>
@@ -188,7 +188,7 @@ const InvestorForm = () => {
                   value={form?.partnership || ""}
                   id="partnership"
                   required
-                  className="rounded-lg border border-[#D1D5DB] outline-none text-[#8c8c8c] w-full px-[14px] py-[10px]"
+                  className="rounded-lg border border-[#D1D5DB] outline-none text-[#8c8c8c] w-full px-[14px] py-[14px]"
                   onChange={handleChange}
                 >
                   <option value=""></option>
