@@ -23,7 +23,7 @@ const InvestorForm = () => {
           // onSubmit={handleForm}
           className="pl-28 pr-4 py-24 max-xl:pl-14 max-lg:w-full max-lg:pl-6 max-lg:py-6"
         >
-          <div className="mb-20">
+          <div className="mb-20 max-lg:mb-12 max-md:mb-8">
             <Image
               src="/assets/icon/black-logo.svg"
               width={111}
@@ -54,7 +54,7 @@ const InvestorForm = () => {
                 name="firstname"
                 required
                 value={form?.firstname || ""}
-                className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
+                className="rounded-lg border border-[#D1D5DB] outline-none text-[#8c8c8c] w-full px-[14px] py-[10px]"
                 onChange={handleChange}
               />
             </div>
@@ -72,7 +72,7 @@ const InvestorForm = () => {
                 name="lastname"
                 required
                 value={form?.lastname || ""}
-                className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
+                className="rounded-lg border border-[#D1D5DB] outline-none text-[#8c8c8c] w-full px-[14px] py-[10px]"
                 onChange={handleChange}
               />
             </div>
@@ -89,7 +89,7 @@ const InvestorForm = () => {
                 id="email"
                 name="email"
                 value={form?.email || ""}
-                className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
+                className="rounded-lg border border-[#D1D5DB] outline-none text-[#8c8c8c] w-full px-[14px] py-[10px]"
                 onChange={handleChange}
               />
             </div>
@@ -124,7 +124,7 @@ const InvestorForm = () => {
                 required
                 value={form?.coumtry || ""}
                 id="country"
-                className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
+                className="rounded-lg border border-[#D1D5DB] outline-none text-[#8c8c8c] w-full px-[14px] py-[10px]"
                 onChange={handleChange}
               >
                 <option value=""></option>
@@ -145,19 +145,19 @@ const InvestorForm = () => {
                 name="city"
                 value={form?.city || ""}
                 id="city"
-                className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
+                className="rounded-lg border outline-none text-[#8c8c8c] border-[#D1D5DB] w-full px-[14px] py-[10px]"
                 onChange={handleChange}
               >
                 <option value=""></option>
-                <option value="">Abuja</option>
-                <option value="">Lagos</option>
+                <option value="Abuja">Abuja</option>
+                <option value="Lagos">Lagos</option>
               </select>
             </div>
           </div>
 
           <div className="mt-4">
             <label
-              htmlFor="firstname"
+              htmlFor="Company"
               className="font-geist font-medium text-sm text-[#595959]"
             >
               Company
@@ -168,7 +168,7 @@ const InvestorForm = () => {
               id="Company"
               name="Company"
               value={form?.Company || ""}
-              className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
+              className="rounded-lg border border-[#D1D5DB] outline-none text-[#8c8c8c] w-full px-[14px] py-[10px]"
               onChange={handleChange}
             />
           </div>
@@ -187,12 +187,12 @@ const InvestorForm = () => {
                 value={form?.partnership || ""}
                 id="partnership"
                 required
-                className="rounded-lg border border-[#D1D5DB] text-[#8c8c8c] w-full px-[14px] py-[10px]"
+                className="rounded-lg border border-[#D1D5DB] outline-none text-[#8c8c8c] w-full px-[14px] py-[10px]"
                 onChange={handleChange}
               >
                 <option value=""></option>
-                <option value="">partner</option>
-                <option value="">partnership</option>
+                <option value="partner">partner</option>
+                <option value="partnership">partnership</option>
               </select>
             </div>
           </div>

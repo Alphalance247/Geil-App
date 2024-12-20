@@ -43,7 +43,7 @@ const ContactForm = () => {
               name="firstname"
               value={form.firstname || ""}
               required
-              className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
+              className="rounded-lg border border-[#D1D5DB] text-[#8c8c8c] w-full px-[14px] py-[10px] outline-none"
               onChange={handleChange}
             />
           </div>
@@ -61,7 +61,7 @@ const ContactForm = () => {
               name="lastname"
               value={form?.lastname || ""}
               required
-              className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
+              className="rounded-lg border border-[#D1D5DB]  w-full px-[14px] py-[10px] outline-none text-[#8c8c8c]"
               onChange={handleChange}
             />
           </div>
@@ -78,7 +78,7 @@ const ContactForm = () => {
               id="email"
               name="email"
               value={form?.email || ""}
-              className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
+              className="rounded-lg border border-[#D1D5DB]  w-full px-[14px] py-[10px] outline-none text-[#8c8c8c]"
               onChange={handleChange}
             />
           </div>
@@ -95,7 +95,7 @@ const ContactForm = () => {
               id="number"
               name="number"
               value={form?.number || ""}
-              className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
+              className="rounded-lg border border-[#D1D5DB]  w-full px-[14px] py-[10px] outline-none text-[#8c8c8c]"
               onChange={handleChange}
             />
           </div>
@@ -112,18 +112,18 @@ const ContactForm = () => {
               name="country"
               value={form?.country || ""}
               id="country"
-              className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
+              className="rounded-lg border border-[#D1D5DB]  w-full px-[14px] py-[10px] outline-none text-[#8c8c8c]"
               onChange={handleChange}
             >
               <option value=""></option>
-              <option value="Nigeria"></option>
-              <option value="Ghana"></option>
+              <option value="Nigeria">Nigeria</option>
+              <option value="Ghana">Ghana</option>
             </select>
           </div>
 
           <div>
             <label
-              htmlFor="country"
+              htmlFor="city"
               className="font-geist font-medium text-sm text-[#595959]"
             >
               City*
@@ -133,12 +133,12 @@ const ContactForm = () => {
               name="city"
               value={form?.city || ""}
               id="city"
-              className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
+              className="rounded-lg border border-[#D1D5DB] w-full px-[14px] py-[10px] outline-none text-[#8c8c8c]"
               onChange={handleChange}
             >
               <option value=""></option>
-              <option value="">Abuja</option>
-              <option value="">Kano</option>
+              <option value="Abuja">Abuja</option>
+              <option value="Kano">Kano</option>
             </select>
           </div>
         </div>
@@ -156,10 +156,12 @@ const ContactForm = () => {
               name="subject"
               value={form?.subject || ""}
               id="subject"
-              className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
+              className="rounded-lg border border-[#D1D5DB]  w-full px-[14px] py-[10px] outline-none text-[#8c8c8c]"
               onChange={handleChange}
             >
               <option value=""></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
             </select>
           </div>
 
@@ -176,7 +178,7 @@ const ContactForm = () => {
               id="message"
               value={form?.message || ""}
               rows={5}
-              className="rounded-lg border border-[#D1D5DB] text-white w-full"
+              className="rounded-lg border border-[#D1D5DB] w-full outline-none text-[#8c8c8c]"
               onChange={handleChange}
             ></textarea>
           </div>

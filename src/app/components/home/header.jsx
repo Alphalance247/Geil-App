@@ -35,7 +35,7 @@ const Header = () => {
 
   return (
     <header className="bg-[#ffff] border-b border-[#F0F0F0]">
-      <div className="transition-all duration-500 max-w-[1300px] mx-auto px-8 flex justify-between items-center py-[18px] shadow-md">
+      <div className="transition-all duration-500 max-w-[1300px] mx-auto px-8 flex justify-between items-center py-[18px]">
         <Link href="/">
           <Image
             src="/assets/icon/logo.svg"
