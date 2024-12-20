@@ -12,30 +12,27 @@ const Footer = () => {
     },
     {
       id: 2,
-      name: "CORE OFFERINGS",
-      scrollSection: "about",
-      img: "/assets/icon/linkedin.svg",
-      url: "#",
-    },
-    {
-      id: 3,
       name: "SOLUTION",
       scrollSection: "FAQ",
       img: "/assets/icon/x.svg",
       url: "#",
     },
-    { id: 4, name: "WHO WE SERVE", scrollSection: "contact" },
-    { id: 5, name: "TECHNOLOGY", scrollSection: "contact" },
-    { id: 6, name: "battery", scrollSection: "contact" },
+    {
+      id: 3,
+      name: "WHO WE SERVE",
+      img: "/assets/icon/linkedin.svg",
+      scrollSection: "contact",
+    },
+    { id: 4, name: "TECHNOLOGY", scrollSection: "contact" },
   ];
 
   const socialData = navs.slice(0, 3);
   return (
-    <footer className="bg-[#141414]">
+    <footer className="bg-[#14290f]">
       <div className="transition-all duration-500 max-w-[1350px] mx-auto px-8 py-[5rem] max-lg:py-16 max-md:py-12 max-md:px-4">
         <div className="flex justify-between items-center mb-20 max-md:flex-col max-md:justify-center max-md:gap-y-6 max-md:mb-10">
           <Image
-            src="/assets/icon/logo.svg"
+            src="/assets/icon/flogo.svg"
             width={111}
             height={34}
             alt="logo"
@@ -77,7 +74,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-[#373737] pt-10 flex justify-between max-md:justify-center max-md:text-center max-md:flex-col max-md:gap-y-4">
+        <div className="border-t border-[#3B722D] pt-10 flex justify-between max-md:justify-center max-md:text-center max-md:flex-col max-md:gap-y-4">
           <p className="text-sm font-medium font-geist text-[#BFBFBF]">
             © {new Date().getFullYear()} Green Energy Infrastructure Limited.
             All rights reserved.

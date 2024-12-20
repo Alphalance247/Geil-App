@@ -3,12 +3,13 @@ const WhoWeServe = () => {
     {
       heading: "Urban Delivery and Logistics Companies",
       image: "/assets/image/1.png",
-      subhead: "Companies using electric trikes for last-mile deliveries.",
+      subhead:
+        "Companies using electric tricycles and motorcycles for last-mile deliveries.",
     },
     {
       heading: "Public and Private Transport Operators",
       subhead:
-        "Organizations that deploy electric trikes for city commuting or tourism.",
+        "Organizations that deploy electric tricycles and motorcycles for city commuting or tourism.",
       image: "/assets/image/3.png",
     },
     {
@@ -20,13 +21,13 @@ const WhoWeServe = () => {
     {
       heading: "Municipalities and Government Entities",
       subhead:
-        "Eco-conscious urban dwellers using electric trikes for personal transportation.",
+        "Eco-conscious urban dwellers using electric tricycles and motorcycles for personal transportation.",
       image: "/assets/image/4.png",
     },
   ];
 
   return (
-    <section className="bg-white border-b border-[#F0F0F0]">
+    <section className="bg-white border-b border-[#F0F0F0]" id="serve">
       <div className="max-w-[1280px] px-8 py-24 mx-auto max-lg:py-16 max-md:py-12 max-md:px-4">
         <div className="w-[55%] text-left mb-20 max-xl:w-[75%] max-md:w-full max-md:mb-10">
           <h3 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-4 font-onest max-md:text-2xl">
@@ -57,7 +58,7 @@ const WhoWeServe = () => {
                       "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(43, 40, 43, 0.7) 73.91%)",
                   }}
                 ></div>
-                <div className="absolute z-20 pl-6 pt-[18rem] max-lg:pt-[15rem] max-lg:pl-4">
+                <div className="absolute z-20 pl-6 pr-[2rem] pt-[18rem] max-lg:pt-[15rem] max-lg:pl-4">
                   <p className="font-bold text-xl text-white font-onest max-lg:text-lg max-lg:mb-3">
                     {item?.heading}
                   </p>

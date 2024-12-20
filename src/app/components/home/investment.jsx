@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Investment = () => {
   const data = [
@@ -43,9 +44,11 @@ const Investment = () => {
               your business, drive growth, and keep you ahead in the EV
               revolution. Here’s what you gain:
             </p>
-            <button className="px-6 py-[10px] text-[#1F1F1F] font-bold text-sm bg-[#6BD051] rounded-[30px] font-geist">
-              Register Your Interest
-            </button>
+            <Link href={"/investor-form"}>
+              <button className="px-6 py-[10px] text-[#1F1F1F] font-bold text-sm bg-[#6BD051] rounded-[30px] font-geist">
+                Register Your Interest
+              </button>
+            </Link>
           </div>
         </div>
 

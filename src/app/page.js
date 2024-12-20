@@ -18,14 +18,14 @@ export default function Home() {
       <Header />
       <Hero />
       <Highlight />
+      {/* <WhatWeOffer /> */}
       <Empowering />
-      <WhatWeOffer />
       <Innovative />
       <WhatDrivesUs />
       <WhoWeServe />
       <Investment />
       <SmartTechnology />
-      <BatteryEfficiency />
+      {/* <BatteryEfficiency /> */}
       <GetInTouch />
       <Footer />
     </>

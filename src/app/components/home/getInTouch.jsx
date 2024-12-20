@@ -3,7 +3,7 @@ import ContactForm from "./contactForm";
 
 const GetInTouch = () => {
   return (
-    <section className="bg-white border-b border-[#F0F0F0]">
+    <section className="bg-white border-b border-[#F0F0F0]" id="get-in-touch">
       <div className="max-w-[1280px] px-8 py-24 mx-auto grid grid-cols-2 gap-x-24 max-xl:gap-x-12 max-lg:grid-cols-1 max-lg:gap-y-6 max-lg:py-16 max-md:py-12 max-md:px-4">
         <div className="flex flex-col gap-y-10">
           <div className="text-left w-[90%] max-md:w-full">

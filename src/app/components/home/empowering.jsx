@@ -5,43 +5,48 @@ const Empowering = () => {
     {
       heading: "Our Vision",
       subhead:
-        "To create a sustainable future where electric tricycles & motorcycles have a seamless and accessible charging network, enabling efficient and eco-friendly urban mobility.",
+        "To create a sustainable future where electric tricycles and motorcycles have a seamless and accessible charging network, enabling efficient and eco-friendly urban mobility.",
     },
     {
       heading: "Our Mission",
       subhead:
-        "To develop innovative, reliable, and user-friendly charging infrastructure that supports the growth of electric tricycles & motorcycles, advancing urban sustainability and helping cities meet their carbon reduction targets.",
+        "To develop innovative, reliable, and user-friendly charging  infrastructure that supports the growth of electric tricycles and motorcycles, advancing urban sustainability and helping cities meet their carbon reduction targets.",
     },
   ];
   return (
-    <section className="bg-white">
+    <section className="bg-white" id="about">
       <div className="max-w-[1280px] px-8 py-24 mx-auto max-lg:py-16 max-md:px-4 max-sm:py-12">
-        <div className="grid grid-cols-[49%auto] gap-[63px] mb-12 max-lg:gap-8 max-sm:grid-cols-1">
+        <div className="grid grid-cols-[50%auto] gap-[63px] mb-12 max-lg:gap-8 max-sm:grid-cols-1">
           <div>
             <h1 className="text-4xl tracking-[-2%] font-bold text-[#262626] mb-6 font-onest max-lg:text-2xl">
               Empowering Sustainable Urban Mobility
             </h1>
             <p className="text-xl font-normal text-[#454545] font-onest max-lg:text-sm">
-              At Green Energy Infrastructure Limited (GEIL), we are shaping the
-              future of urban mobility with innovative charging solutions for
-              electric trikes and light electric vehicles. As cities transition
-              to sustainable transportation, our mission is clear: to empower
-              this transformation with cutting-edge charging infrastructure that
-              ensures seamless and eco-friendly mobility.
+              GEIL is a forward-thinking technology and infrastructure company
+              dedicated to building the next generation of charging solutions
+              for electric tricycles and motorcycles. As cities globally move
+              toward greener, more sustainable transportation options, electric
+              tricycles and motorcycles are becoming a popular choice for both
+              personal and commercial transport due to their efficiency and
+              versatility.
               <br />
               <br />
-              We are more than just a technology company; we are catalysts for
-              sustainable change, helping municipalities, businesses, and
-              individuals embrace cleaner transportation solutions.
+              Our mission is to empower this transition by providing robust,
+              accessible, and innovative charging infrastructure that meets the
+              unique requirements of tricycles and motorcycles, helping to build
+              a clean and sustainable future.
             </p>
           </div>
 
-          <img
-            src="/assets/image/charge.png"
-            width={564}
-            height={432}
-            alt="recharging gif"
-          />
+          <div>
+            <img
+              src="/assets/image/charge.gif"
+              width={564}
+              height={432}
+              alt="recharging gif"
+              className=" rounded-2xl h-fit w-[564px]"
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-2 gap-6 max-sm:grid-cols-1">

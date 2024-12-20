@@ -41,7 +41,8 @@ const ContactForm = () => {
               type="text"
               id="firstname"
               name="firstname"
-              value=""
+              value={form.firstname || ""}
+              required
               className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
               onChange={handleChange}
             />
@@ -56,9 +57,10 @@ const ContactForm = () => {
             <br />
             <input
               type="text"
-              id="firstname"
-              name="firstname"
-              value=""
+              id="lastname"
+              name="lastname"
+              value={form?.lastname || ""}
+              required
               className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
               onChange={handleChange}
             />
@@ -73,9 +75,9 @@ const ContactForm = () => {
             <br />
             <input
               type="email"
-              id="firstname"
-              name="firstname"
-              value=""
+              id="email"
+              name="email"
+              value={form?.email || ""}
               className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
               onChange={handleChange}
             />
@@ -90,9 +92,9 @@ const ContactForm = () => {
             <br />
             <input
               type="text"
-              id="firstname"
-              name="firstname"
-              value=""
+              id="number"
+              name="number"
+              value={form?.number || ""}
               className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
               onChange={handleChange}
             />
@@ -108,12 +110,14 @@ const ContactForm = () => {
             <br />
             <select
               name="country"
-              value=""
+              value={form?.country || ""}
               id="country"
               className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
               onChange={handleChange}
             >
               <option value=""></option>
+              <option value="Nigeria"></option>
+              <option value="Ghana"></option>
             </select>
           </div>
 
@@ -127,12 +131,14 @@ const ContactForm = () => {
             <br />
             <select
               name="city"
-              value=""
+              value={form?.city || ""}
               id="city"
               className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
               onChange={handleChange}
             >
               <option value=""></option>
+              <option value="">Abuja</option>
+              <option value="">Kano</option>
             </select>
           </div>
         </div>
@@ -148,7 +154,7 @@ const ContactForm = () => {
             <br />
             <select
               name="subject"
-              value=""
+              value={form?.subject || ""}
               id="subject"
               className="rounded-lg border border-[#D1D5DB] text-white w-full px-[14px] py-[10px]"
               onChange={handleChange}
@@ -168,7 +174,7 @@ const ContactForm = () => {
             <textarea
               name="mesage"
               id="message"
-              value=""
+              value={form?.message || ""}
               rows={5}
               className="rounded-lg border border-[#D1D5DB] text-white w-full"
               onChange={handleChange}
