@@ -192,8 +192,15 @@ const InvestorForm = () => {
                   onChange={handleChange}
                 >
                   <option value=""></option>
-                  <option value="partner">partner</option>
-                  <option value="partnership">partnership</option>
+                  <option value="Financial investment to buy asset">
+                    Financial investment to buy asset
+                  </option>
+                  <option value="Financial investment in charging infrastructure">
+                    Financial investment in charging infrastructure
+                  </option>
+                  <option value="Provision of space for charging infrastructure">
+                    Provision of space for charging infrastructure
+                  </option>
                 </select>
               </div>
             </div>
